@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+        <script src="./jquery-1.11.3.min.js"></script>
+        <script language="javascript" type="text/javascript" src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <center>
+
+    <body>
+      <div id="logo-container"><img src="Header.png"></div>
+
+      <div align="center" style="border:1px dashed #e3ceee border-radius 20px 60px">
+        <form id="task-form" method="post">
+            <label for="todo-name"> <h1>Insert Task:</h1> </label>
+            <input type="text" name="todo-name" id="todo-name" />
+            <br>
+            <a href="#" onclick="addTodo()"><h3>Add</h3></a>
+            <a href="#" onclick="clearCheckedTodos()"><h3>Clear</h3></a>
+        </form>
+
+        <span>
+          <h2>
+          <ul id="tasks" style="list-style-type:none">
+
+        </ul>
+      </h2>
+    </div>
+
+    </body>
+</center>
+
+</html>
